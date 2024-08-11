@@ -1,0 +1,256 @@
+/* Estilo global para el cuerpo del documento */
+/* Define la fuente base, márgenes, fondo y color de texto predeterminado para toda la página */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilo para la cabecera (header) */
+/* Define el fondo de la cabecera, sombras para la barra de navegación y estilos del logo y menú */
+header {
+    background-color: #004e8c;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    max-height: 60px; /* Ajusta la altura máxima del logo */
+}
+
+header nav ul {
+    list-style: none; /* Elimina los puntos de la lista del menú de navegación */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Alinea los elementos del menú en una fila */
+}
+
+header nav ul li {
+    margin-left: 20px; /* Espacio entre los elementos del menú */
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 15px; /* Espaciado interno para hacer los enlaces más grandes */
+    transition: background-color 0.3s ease; /* Transición suave en el fondo al hacer hover */
+}
+
+header nav ul li a:hover {
+    background-color: #003366; /* Color de fondo al pasar el cursor por el menú */
+    border-radius: 4px; /* Bordes redondeados para el efecto hover */
+}
+
+/* Sección de bienvenida */
+/* Estilo para la sección principal de bienvenida que contiene el título y el carrusel */
+.bienvenida {
+    background-color: #fff;
+    padding: 60px 0; /* Espaciado superior e inferior */
+    text-align: center; /* Centra el contenido de la bienvenida */
+}
+
+.bienvenida h1 {
+    margin-top: 20px;
+    font-size: 2.5em; /* Tamaño del texto para el título principal */
+    color: #004e8c; /* Color del texto principal */
+    letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+/* Contenedor del carrusel */
+/* Estilo para centrar el carrusel y sus imágenes */
+.carousel-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el carrusel */
+    align-items: center; /* Centra verticalmente el carrusel */
+    margin-top: 20px;
+}
+
+/* Estilo para las imágenes del carrusel */
+/* Asegura que todas las imágenes del carrusel tengan el mismo tamaño y aspecto */
+.carousel-inner img {
+    width: 100%;
+    height: 450px; /* Altura fija para las imágenes del carrusel */
+    object-fit: cover; /* Cubre completamente el contenedor sin distorsión */
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+}
+
+/* Estilo para los controles del carrusel */
+/* Añade un fondo semitransparente y un efecto de transición a los botones de navegación */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    border-radius: 50%; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    transition: background-color 0.3s ease; /* Transición de color al hacer hover */
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo más oscuro al hacer hover */
+}
+
+/* Indicadores del carrusel */
+/* Estilo para los puntos de navegación del carrusel */
+.carousel-indicators [data-bs-target] {
+    background-color: #f18b00; /* Color personalizado para los indicadores */
+}
+
+/* Secciones de contenido general */
+/* Estilo para las secciones que contienen información textual */
+.contenido {
+    padding: 40px; /* Espaciado interno */
+    background-color: #fff; /* Fondo blanco para destacar el contenido */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 40px; /* Espacio inferior entre secciones */
+}
+
+/* Títulos dentro de las secciones de contenido */
+/* Estilo para los encabezados dentro de las secciones de contenido */
+.contenido h2 {
+    color: #004e8c; /* Color del texto */
+    font-size: 2em; /* Tamaño del texto */
+    margin-bottom: 20px; /* Espacio inferior del título */
+    border-bottom: 3px solid #f18b00; /* Línea inferior para destacar el título */
+    padding-bottom: 10px;
+    display: inline-block; /* Hace que la línea subraye solo el texto */
+}
+
+/* Estilo para la misión y visión */
+/* Color y formato específico para los subtítulos de misión y visión */
+.mision, .vision {
+    font-size: 1.2em; /* Tamaño del texto */
+    font-weight: 600; /* Grosor del texto */
+}
+
+.mision {
+    color: #007bff; /* Color azul para misión */
+}
+
+.vision {
+    color: #28a745; /* Color verde para visión */
+}
+
+/* Botón de enlace al organigrama */
+/* Estilo para el botón de enlace que lleva al organigrama */
+.enlace-organigrama {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px; /* Espaciado interno */
+    color: #fff; /* Color del texto */
+    text-decoration: none;
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #004e8c; /* Fondo azul */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones de color y movimiento */
+}
+
+.enlace-organigrama:hover {
+    background-color: #003366; /* Fondo más oscuro al hacer hover */
+    transform: translateY(-2px); /* Movimiento hacia arriba al hacer hover */
+}
+
+/* Estilo para la sección de video */
+/* Define cómo se muestran los videos y enlaces relacionados */
+.video-container {
+    text-align: center;
+    margin: 20px 0; /* Margen superior e inferior */
+}
+
+/* Enlace al canal de YouTube */
+/* Estilo para el enlace que lleva al canal de YouTube */
+.enlace-youtube {
+    color: #dc3545; /* Color rojo para resaltar el enlace */
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transiciones de color y movimiento */
+}
+
+.enlace-youtube:hover {
+    color: #b52b3a; /* Color más oscuro al hacer hover */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al hacer hover */
+}
+
+/* Estilo para la sección de contacto */
+/* Estilo que define la visualización de la información de contacto */
+.contacto {
+    background-color: #004e8c; /* Fondo azul oscuro */
+    color: white;
+    padding: 40px; /* Espaciado interno */
+    text-align: left; /* Alineación del texto a la izquierda */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 800px; /* Anchura máxima para la sección */
+    margin: 0 auto 40px auto; /* Centra la sección y añade margen inferior */
+}
+
+/* Estilo para el texto dentro de la sección de contacto */
+/* Estilo para párrafos y enlaces en la sección de contacto */
+.contacto p {
+    margin: 5px 0;
+    display: flex; /* Flexbox para alinear íconos y texto */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.contacto strong {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.1em; /* Tamaño de texto para resaltar información */
+}
+
+.contacto .icono {
+    width: 20px; /* Tamaño del ícono */
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+    vertical-align: middle; /* Alinea verticalmente el ícono con el texto */
+}
+
+/* Enlaces en la sección de contacto */
+/* Estilo para los enlaces dentro de la sección de contacto */
+.contacto a {
+    color: white;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease; /* Transición para subrayado */
+}
+
+.contacto a:hover {
+    text-decoration: underline; /* Subraya el enlace al hacer hover */
+}
+
+/* Estilo para el pie de página */
+/* Define el aspecto del footer en la parte inferior de la página */
+footer {
+    background-color: #003366; /* Fondo azul oscuro */
+    color: white;
+    text-align: center;
+    padding: 15px 0; /* Espaciado interno superior e inferior */
+    margin-top: 40px; /* Margen superior */
+    border-radius: 0 0 10px 10px; /* Bordes redondeados en la parte inferior */
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1); /* Sombra en la parte superior del footer */
+}
+
+/* Ajustes para dispositivos móviles */
+/* Mejora la visualización en pantallas pequeñas */
+@media (max-width: 768px) {
+    .bienvenida h1 {
+        font-size: 2em; /* Reduce el tamaño del texto principal */
+    }
+
+    .carousel-inner img {
+        height: 300px; /* Reduce la altura de las imágenes del carrusel */
+    }
+
+    .contenido {
+        padding: 20px; /* Reduce el espaciado interno */
+    }
+
+    .contacto {
+        padding: 20px; /* Reduce el espaciado interno */
+    }
+}
